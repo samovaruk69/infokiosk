@@ -1,0 +1,18 @@
+{%extends 'main/layout.html'%}
+{%block head%}Законы{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Законы</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <p href="{{ el.Law}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Law_doc.url }}">
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

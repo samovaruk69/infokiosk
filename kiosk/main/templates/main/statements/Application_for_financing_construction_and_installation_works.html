@@ -1,0 +1,39 @@
+{%include 'main/onewindow/Forms.html'%}
+<center>
+    <div>
+{%for el in data%}
+    <center>
+        <div>
+                <p href="{{ el.Application_for_financing_construction_and_installation_works}}" class="text_view_statements">{{ el.title }} {{el.times}}</p>
+                <embed class="views_docs_statements" src="{{ el.Application_for_financing_construction_and_installation_works_doc.url }}" >
+
+        </div>
+    </center>
+{%endfor%}
+
+    </div>
+</center>
+
+
+{%extends 'main/layout.html'%}
+{%block head%}Извещение об отсутствии{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Извещение об отсутствии</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <p href="{{ el.Application_for_financing_construction_and_installation_works}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Application_for_financing_construction_and_installation_works_doc.url }}" >
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+

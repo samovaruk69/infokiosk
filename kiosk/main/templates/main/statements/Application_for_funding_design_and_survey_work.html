@@ -1,0 +1,37 @@
+{%include 'main/onewindow/Forms.html'%}
+<center>
+    <div>
+{%for el in data%}
+    <center>
+        <div>
+
+
+        </div>
+    </center>
+{%endfor%}
+
+    </div>
+</center>
+
+{%extends 'main/layout.html'%}
+{%block head%}Извещение об отсутствии{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Извещение об отсутствии</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <embed class="docs_view" src="{{ el.Absence_notice_doc.url }}" >
+                <p href="{{ el.Absence_notice}}" class="names">{{ el.title }} {{el.times}}</p>
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+
+

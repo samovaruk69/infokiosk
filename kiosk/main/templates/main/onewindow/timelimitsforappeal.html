@@ -1,0 +1,15 @@
+{%extends 'main/layout.html'%}
+{%block head%}Тарифы на природный и сжиженный газ для населения{%endblock%}
+
+
+{%block place%}
+{%for el in data1%}
+                <p href="{{ el.timelimitsforappeal}}" class="top_text">{{ el.title1 }} {{el.times1}}</p>
+
+<center>
+        <div class="botton_color">
+                <img class="photo" src="{{ el.timelimitsforappeal_photo.url }}" >
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

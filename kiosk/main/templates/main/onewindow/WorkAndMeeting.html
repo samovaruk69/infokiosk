@@ -1,0 +1,18 @@
+{%extends 'main/layout.html'%}
+{%block head%}Видеоролики{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Режим работы и график приема граждан</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <p href="{{ el.WorkAndMeeting}}" class="names">{{ el.title }} {{el.times}}</p>
+                <img class="photo" src="{{ el.WorkAndMeeting_photo.url }}" >
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

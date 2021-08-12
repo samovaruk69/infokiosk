@@ -1,0 +1,22 @@
+{%extends 'main/layout.html'%}
+{%block head%}Извещение об отсутствии{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Извещение об отсутствии</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <p href="{{ el.Excavation_permit_application}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Excavation_permit_application_doc.url }}" >
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+
+

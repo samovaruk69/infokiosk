@@ -1,0 +1,34 @@
+{%extends 'main/layout.html'%}
+{%load static%}
+
+{%block head%}Структура руководства{%endblock%}
+
+
+{%block place%}
+        <div class="main_color">
+            <p class="top_text">Структура руководства</p>
+        </div>
+{%endblock%}
+{%block body%}
+<center>
+    <div class="botton_color_for_menu">
+    <table class="main_table_leadership">
+    <tr>
+          <td><a href="{%url 'Leadership_Polotsk'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></td>
+          <td><a href="{%url 'Leadership_Vitebsk'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></td>
+          <td><a href="{%url 'Leadership_Beltop'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></td>
+          <td><a href="{%url 'Leadership_Minenergo'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></td>
+    </tr>
+
+        <tr>
+          <td><a href="{%url 'Leadership_Polotsk'%}"><button  class="button_second_block_test">Руководство ПУ "Полоцкгаз"</button></a></td>
+          <td><a href="{%url 'Leadership_Vitebsk'%}"><button class="button_second_block_test">Руководство УП "Витебскоблгаз"</button></a></td>
+          <td> <a href="{%url 'Leadership_Beltop'%}"><button class="button_second_block_test">Руководство ГПО "Белтопгаз"</button></a></td>
+          <td><a href="{%url 'Leadership_Minenergo'%}"><button class="button_second_block_test">Руководство Минэнерго</button></a>
+
+        </tr>
+    </table>
+    </div>
+    </center>
+
+{%endblock%}

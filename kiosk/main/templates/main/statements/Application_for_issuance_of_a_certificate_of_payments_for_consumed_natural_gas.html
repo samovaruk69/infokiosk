@@ -1,0 +1,25 @@
+{%extends 'main/layout.html'%}
+{%block head%}Извещение об отсутствии{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Извещение об отсутствии</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                 <p href="{{ el.Application_for_issuance_of_a_certificate_of_payments_for_consumed_natural_gas}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Application_for_issuance_of_a_certificate_of_payments_for_consumed_natural_gas_doc.url }}" >
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
+
+
+
+

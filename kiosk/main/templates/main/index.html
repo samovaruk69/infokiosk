@@ -1,0 +1,23 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap/bootstrap.min.css'%}">
+
+    <title>Главная страница</title>
+</head>
+
+<body class="index_logo_image">
+<div class="button_place">
+    <a href="{%url 'ProceduresOneWindow'%}"><button class="button_index"></button></a>
+    <a href="{%url 'onewindow'%}"><button class="button_index"></button></a>
+    <a href="{%url 'price'%}"><button class="button_index"></button></a>
+    <a href="{%url 'Videos'%}"><button class="button_index"></button></a>
+</div>
+</body>
+</html>

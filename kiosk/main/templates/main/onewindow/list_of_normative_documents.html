@@ -1,0 +1,25 @@
+{%extends 'main/layout.html'%}
+
+{%block head%}Перечень нормативных документов{%endblock%}
+    {%block place%}
+<p class="top_text">Перечень нормативных документов</p>
+{%endblock%}
+{%block body%}
+<div class="main_table">
+<table class="main_table">
+    <tr>
+        <td><a href="{%url 'Command'%}" class="button_second_block">Приказы</a></td>
+        <td><a href="{%url 'Order'%}" class="button_second_block">Распоряжения</a></td>
+        <td><a href="{%url 'Law'%}" class="button_second_block">Законы</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Directive'%}" class="button_second_block">Директивы</a></td>
+        <td><a href="{%url 'Ruling'%}" class="button_second_block">Постановления</a></td>
+        <td><a href="{%url 'Decree'%}" class="button_second_block">Декреты</a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Other'%}" class="button_second_block">Другое</a></td>
+    </tr>
+</table>
+    </div>
+{%endblock%}

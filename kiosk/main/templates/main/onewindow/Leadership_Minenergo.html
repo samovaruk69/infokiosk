@@ -1,0 +1,18 @@
+{%extends 'main/layout.html'%}
+{%block head%}Видеоролики{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Руководство</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+<center>
+        <div class="botton_color">
+                <img class="photo" src="{{ el.Leadership_Minenergo_photo.url }}" >
+                <p href="{{ el.Leadership_Minenergo}}" class="names">{{ el.title }} {{el.times}}</p>
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

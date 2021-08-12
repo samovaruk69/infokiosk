@@ -1,0 +1,18 @@
+{%extends 'main/layout.html'%}
+{%block head%}Декреты{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Декреты</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                 <p href="{{ el.Decree}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Decree_doc.url }}">
+        </div>
+</center>
+{%endfor%}
+{%endblock%}

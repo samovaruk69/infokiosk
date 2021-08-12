@@ -1,0 +1,21 @@
+{%extends 'main/layout.html'%}
+{%block head%}Извещение об отсутствии{%endblock%}
+
+
+{%block place%}
+<p class="top_text">Извещение об отсутствии</p>
+{%endblock%}
+{%block body%}
+{%for el in data%}
+
+<center>
+        <div class="botton_color">
+                <p href="{{ el.Statement_on_the_consolidation_of_personal_accounts}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Statement_on_the_consolidation_of_personal_accounts_doc.url }}" >
+
+        </div>
+</center>
+{%endfor%}
+{%endblock%}
+
+
