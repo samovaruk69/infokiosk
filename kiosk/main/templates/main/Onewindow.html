@@ -3,8 +3,13 @@
 
 {%block topbar%}
 <div class="topbar">
-    <button><a href="{%url 'home'%}">Back</a></button>
-    <a class="toptext">Информация по заявительному принципу "Одно окно"</a>
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'home'%}">Назад</a></td>
+            <td><a class="toptext">Информация по заявительному принципу "Одно окно"</a></td>
+        </tr>
+    </table>
+
 </div>
 {%endblock%}
 

@@ -6,29 +6,40 @@
 .topbar{
     height: 19vh;
     background-color: #565656;
+    text-align: center;
 }
 .toptext{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4vw;
-    padding-left: 10vw;
+    font-size: 4vh;
+    margin-left: 5vw;
+    margin-top: 3vh;
 }
-
+.back{
+	color: #fff;
+	text-decoration: none;
+	background: #565656;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    display: flex;
+    height: 15vh;
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
 
 
 .Onewindow_main_table_position{
     padding-top: 3vh;
     height: 78vh;
     background: #828282;
-
 }
-
 .Onewindow_table{
     text-align: center;
 
 }
-
-
 .button_table{
 	color: #fff;
 	text-decoration: none;
@@ -38,4 +49,5 @@
     height: 20vh;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
