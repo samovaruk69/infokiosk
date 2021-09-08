@@ -20,7 +20,7 @@ def price_home(request):
     return render(request,'main/price.html', {'data': data})
 
 def onewindow(request):
-    return render(request,'main/onewindow/onewindow.html')
+    return render(request,'main/Onewindow.html')
 
 def belarusbank(request):
     return render(request,'main/onewindow/belarusbank.html')
