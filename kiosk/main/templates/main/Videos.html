@@ -1,18 +1,24 @@
-{%extends 'main/layout.html'%}
+{%extends 'main/Shell.html'%}
 {%block head%}Видеоролики{%endblock%}
 
-
-{%block place%}
-<p class="top_text">Видеоинструктажи</p>
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'home'%}">Назад</a></td>
+            <td><a class="toptext">Видеоролики</a></td>
+        </tr>
+    </table>
+</div>
 {%endblock%}
-{%block body%}
 
+{%block body%}
 {%for el in data%}
 <center>
-        <div class="botton_color">
-            <p href="{{ el.price}}" class="names">{{ el.title }} {{el.times}}</p>
+        <div class="content_div">
+            <p href="{{ el.price}}" class="cool_text">{{ el.title }} {{el.times}}</p>
             <video src="{{ el.Videos_video.url }}" controls width=80% height=60%></video>
         </div>
-</center>
+    </center>
 {%endfor%}
 {%endblock%}

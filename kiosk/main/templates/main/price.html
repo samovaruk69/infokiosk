@@ -1,15 +1,24 @@
-{%extends 'main/layout.html'%}
+{%extends 'main/Shell.html'%}
 {%block head%}Тарифы на природный и сжиженный газ для населения{%endblock%}
 
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'home'%}">Назад</a></td>
+            <td><a class="toptext">Тарифы на природный и сжиженный газ для населения</a></td>
+        </tr>
+    </table>
 
-{%block place%}
+</div>
+{%endblock%}
+
+{%block body%}
 {%for el in data%}
-    <p href="{{ el.price}}" class="top_text">{{ el.title }} {{el.times}}</p>
 
-<center>
         <div class="botton_color">
                 <embed class="docs_view" src="{{ el.price_doc.url }}" >
+                <p href="{{ el.price}}" class="cool_text">{{ el.title }} {{el.times}}</p>
         </div>
-</center>
 {%endfor%}
 {%endblock%}

@@ -1,10 +1,18 @@
-{%extends 'main/layout.html'%}
+{%extends 'main/Shell.html'%}
 {%block head%}Книга замечаний и предложений{%endblock%}
 
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
+            <td><a class="toptext">Книга замечаний и предложений</a></td>
+        </tr>
+    </table>
 
-{%block place%}
-<p class="top_text">Книга замечаний и предложений</p>
+</div>
 {%endblock%}
+
 {%block body%}
     <div class="write_text">
     <div><br><br>
