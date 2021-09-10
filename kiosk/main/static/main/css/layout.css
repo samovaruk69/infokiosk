@@ -180,6 +180,7 @@
     height: 40vh;
     background-color: transparent;
     margin-left: 2vh;
+     border: none !important;
 
 }
 .button_place {
