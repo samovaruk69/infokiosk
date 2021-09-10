@@ -171,15 +171,14 @@
 
 /*done index*/
 .index_logo_image {
-    background: url(/static/main/img/index_logo.jpg);
-    transform: rotate(90deg);
-
+    background-image: url(/static/main/img/infokiosk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .button_index {
-    width: 22%;
-    height: 62vh;
+    width: 40vw;
+    height: 60vh;
     background-color: transparent;
-    margin-top: 28vh;
     margin-left: 2vh;
 
 }

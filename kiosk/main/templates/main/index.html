@@ -14,10 +14,17 @@
 
 <body class="index_logo_image">
 <div class="button_place">
-    <a href="{%url 'Services'%}"><button class="button_index"></button></a>
-    <a href="{%url 'onewindow'%}"><button class="button_index"></button></a>
-    <a href="{%url 'price'%}"><button class="button_index"></button></a>
-    <a href="{%url 'Videos'%}"><button class="button_index"></button></a>
+    <table>
+        <tr>
+            <td><a href="{%url 'Services'%}"><button class="button_index"></button></a></td>
+            <td><a href="{%url 'onewindow'%}"><button class="button_index"></button></a></td>
+        </tr>
+        <tr>
+            <td><a href="{%url 'price'%}"><button class="button_index"></button></a></td>
+            <td><a href="{%url 'Videos'%}"><button class="button_index"></button></a></td>
+        </tr>
+    </table>
+
 </div>
 </body>
 </html>
