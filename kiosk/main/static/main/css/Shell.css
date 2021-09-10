@@ -94,3 +94,19 @@
     justify-content: center;
     font-weight: bold;
 }
+
+
+
+
+.button_table_leader{
+	color: #fff;
+	text-decoration: none;
+	background: #565656;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    display: flex;
+    height: 17vh;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

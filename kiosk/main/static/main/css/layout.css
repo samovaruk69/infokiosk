@@ -171,9 +171,8 @@
 
 /*done index*/
 .index_logo_image {
-    background-image: url(/static/main/img/index_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(/static/main/img/index_logo.jpg);
+    transform: rotate(90deg);
 
 }
 .button_index {
@@ -182,7 +181,6 @@
     background-color: transparent;
     margin-top: 28vh;
     margin-left: 2vh;
-    border-color: transparent;
 
 }
 .button_place {
