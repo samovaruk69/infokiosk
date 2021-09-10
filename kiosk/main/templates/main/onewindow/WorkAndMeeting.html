@@ -17,7 +17,7 @@
 {%for el in data%}
 
         <div class="botton_color">
-                <img class="photo" src="{{ el.WorkAndMeeting_photo.url }}" >
+                <embed class="docs_view" src="{{ el.WorkAndMeeting_photo.url }}" >
                 <p href="{{ el.WorkAndMeeting}}" class="cool_text">{{ el.title }} {{el.times}}</p>
         </div>
 {%endfor%}

@@ -307,3 +307,12 @@ class Other(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Services(models.Model):
+    title = models.CharField(max_length=150)
+    Services_doc = models.FileField(upload_to='Services/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title

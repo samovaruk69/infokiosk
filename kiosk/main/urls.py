@@ -20,7 +20,7 @@ urlpatterns = [
     path('onewindow/Leadership_Beltop', views.Leadership_Beltop_home, name='Leadership_Beltop'),
     path('onewindow/Leadership_Minenergo', views.Leadership_Minenergo_home, name='Leadership_Minenergo'),
     path('bot/', views.bot, name='bot'),
-    path('Services/', views.Services, name='Services'),
+    path('Services/', views.Services_home, name='Services'),
 
     path('onewindow/Forms', views.Forms, name='Forms'),
     path('onewindow/Forms/Statements_for_writing_off_penalties', views.Statements_for_writing_off_penalties_home, name='Statements_for_writing_off_penalties'),
