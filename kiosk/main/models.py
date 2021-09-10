@@ -42,6 +42,15 @@ class WorkAndMeeting(models.Model):
     def __str__(self):
         return self.title
 
+class Leadership_Shumilino(models.Model):
+    title = models.CharField(max_length=150)
+    Leadership_Shumilino_photo = models.FileField(upload_to='Leadership_Shumilino/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title
+
+
 class Leadership_Polotsk(models.Model):
     title = models.CharField(max_length=150)
     Leadership_Polotsk_photo = models.FileField(upload_to='Leadership_Polotsk/')

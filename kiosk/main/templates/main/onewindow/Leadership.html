@@ -16,26 +16,24 @@
 {%endblock%}
 {%block body%}
 <center>
-    <div class="botton_color_for_menu">
-    <table class="main_table_leadership">
-    <td>
-          <tr><a href="{%url 'Leadership_Polotsk'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></tr>
-          <tr><a href="{%url 'Leadership_Polotsk'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></tr>
-          <tr><a href="{%url 'Leadership_Vitebsk'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></tr>
-          <tr><a href="{%url 'Leadership_Beltop'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></tr>
-          <tr><a href="{%url 'Leadership_Minenergo'%}"><img class="logo_leadership" src="{%static 'main/img/logo_new.png'%}" alt="Logo"></a></tr>
-    </td>
-
-        <td>
-          <tr><a href="{%url 'Leadership_Polotsk'%}"><button  class="button_second_block_test">Руководство Шумилино</button></a></tr>
-          <tr><a href="{%url 'Leadership_Polotsk'%}"><button  class="button_second_block_test">Руководство ПУ "Полоцкгаз"</button></a></tr>
-          <tr><a href="{%url 'Leadership_Vitebsk'%}"><button class="button_second_block_test">Руководство УП "Витебскоблгаз"</button></a></tr>
-          <tr> <a href="{%url 'Leadership_Beltop'%}"><button class="button_second_block_test">Руководство ГПО "Белтопгаз"</button></a></tr>
-          <tr><a href="{%url 'Leadership_Minenergo'%}"><button class="button_second_block_test">Руководство Минэнерго</button></a>
-
+    <div class="Onewindow_main_table_position">
+    <table class="Onewindow_table" cellspacing="10vh">
+        <tr>
+          <td><a href="{%url 'Leadership_Shumilino'%}" class="button_table">Руководство Шумилинского РГС</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Leadership_Polotsk'%}" class="button_table">Руководство ПУ "Полоцкгаз"</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Leadership_Vitebsk'%}" class="button_table">Руководство УП "Витебскоблгаз"</a></td>
+        </tr>
+        <tr>
+          <td> <a href="{%url 'Leadership_Beltop'%}" class="button_table">Руководство ГПО "Белтопгаз"</a></td>
+        </tr>
+        <tr>
+          <td><a href="{%url 'Leadership_Minenergo'%}" class="button_table">Руководство Минэнерго</a></td>
         </tr>
     </table>
     </div>
-    </center>
-
+</center>
 {%endblock%}

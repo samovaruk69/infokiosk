@@ -1,5 +1,5 @@
 {%extends 'main/Shell.html'%}
-{%block head%}Видеоролики{%endblock%}
+{%block head%}Руководство{%endblock%}
 
 
 {%block topbar%}
@@ -7,18 +7,19 @@
     <table>
         <tr>
             <td height="20vh"><a class="back" href="{%url 'Leadership'%}">Назад</a></td>
-            <td><a class="toptext">Руководство ГПО "Белтопгаз"</a></td>
+            <td><a class="toptext">Руководство Шумилинского РГС</a></td>
         </tr>
     </table>
 
 </div>
 {%endblock%}
+
 {%block body%}
 {%for el in data%}
 <center>
         <div class="botton_color">
-                <img class="photo" src="{{ el.Leadership_Beltop_photo.url }}" >
-                <p href="{{ el.Leadership_Beltop}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+                <img class="photo" src="{{ el.Leadership_Shumilino_photo.url }}" >
+                <p href="{{ el.Leadership_Shumilino}}" class="cool_text">{{ el.title }} {{el.times}}</p>
 
         </div>
 </center>

@@ -15,6 +15,7 @@ urlpatterns = [
     path('onewindow/ProceduresOneWindow/', views.ProceduresOneWindow_home, name='ProceduresOneWindow'),
     path('onewindow/WorkAndMeeting/', views.WorkAndMeeting_home, name='WorkAndMeeting'),
     path('onewindow/Leadership/', views.Leadership, name='Leadership'),
+    path('onewindow/Leadership_Shumilino', views.Leadership_Shumilino_home, name='Leadership_Shumilino'),
     path('onewindow/Leadership_Polotsk', views.Leadership_Polotsk_home, name='Leadership_Polotsk'),
     path('onewindow/Leadership_Vitebsk', views.Leadership_Vitebsk_home, name='Leadership_Vitebsk'),
     path('onewindow/Leadership_Beltop', views.Leadership_Beltop_home, name='Leadership_Beltop'),

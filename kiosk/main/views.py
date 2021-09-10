@@ -7,7 +7,7 @@ from .models import price, timelimitsforappeal, RightsAndObligations,\
     Statement_on_the_consolidation_of_personal_accounts, Gas_startup_application, Application_for_issuance_of_a_certificate_of_payments_for_consumed_natural_gas,\
     Application_for_payment, Excavation_permit_application, Sidebar_application, Application_for_TU, Application_for_liquidation_of_the_registered_IBU,\
     Application_for_cylinder_acceptance, Application_for_financing_construction_and_installation_works, Application_for_funding_design_and_survey_work,\
-    Absence_notice, Command, Order, Law, Directive, Ruling, Decree, Other, Services
+    Absence_notice, Command, Order, Law, Directive, Ruling, Decree, Other, Services, Leadership_Shumilino
 # Create your views here.
 
 
@@ -49,6 +49,11 @@ def bot(request):
 
 def Leadership(request):
     return render(request,'main/onewindow/Leadership.html')
+
+
+def Leadership_Shumilino_home(request):
+    data = Leadership_Shumilino.objects.all()
+    return render(request,'main/onewindow/Leadership_Shumilino.html', {'data': data})
 
 def Leadership_Polotsk_home(request):
     data = Leadership_Polotsk.objects.all()
