@@ -1,32 +1,23 @@
-{%include 'main/onewindow/Forms.html'%}
-<center>
-    <div>
-{%for el in data%}
-    <center>
-        <div>
+{%extends 'main/Shell.html'%}
+{%block head%}Заявление на финансирование проектно-изыскательных работ{%endblock%}
 
+{%block topbar%}
+<div class="topbar">
+    <table>
+        <tr>
+            <td height="20vh"><a class="back" href="{%url 'Forms'%}">Назад</a></td>
+            <td><a class="toptext">Заявление на финансирование проектно-изыскательных работ</a></td>
+        </tr>
+    </table>
 
-        </div>
-    </center>
-{%endfor%}
-
-    </div>
-</center>
-
-{%extends 'main/layout.html'%}
-{%block head%}Извещение об отсутствии{%endblock%}
-
-
-{%block place%}
-<p class="top_text">Извещение об отсутствии</p>
+</div>
 {%endblock%}
 {%block body%}
 {%for el in data%}
-
 <center>
         <div class="botton_color">
-                <embed class="docs_view" src="{{ el.Absence_notice_doc.url }}" >
-                <p href="{{ el.Absence_notice}}" class="names">{{ el.title }} {{el.times}}</p>
+                <embed class="docs_view" src="{{ el.Application_for_funding_design_and_survey_work_doc.url }}" >
+                <p href="{{ el.Application_for_funding_design_and_survey_work}}" class="cool_text">{{ el.title }} {{el.times}}</p>
         </div>
 </center>
 {%endfor%}
